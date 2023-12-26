@@ -67,7 +67,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import hyRequest from '../request';
+import hyRequest from '../request' as any;
 
 interface Blog {
   id: number;

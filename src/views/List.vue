@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
-import hyRequest from '../request';
+import hyRequest from '../request' as any;
 
 const msg = ref('');
 const getCityAll = () => {

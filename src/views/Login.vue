@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue';
 import { ElForm, ElFormItem, ElInput, ElButton } from 'element-plus';
-import hyRequest from '../request';
+import hyRequest from '../request' as any;
 
 interface LoginForm {
   username: string;
