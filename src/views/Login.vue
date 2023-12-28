@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import { ref, Ref } from 'vue';
 import { ElForm, ElFormItem, ElInput, ElButton } from 'element-plus';
-import hyRequest from '../request' as any;
+import hyRequest from '../request';
 
 interface LoginForm {
   username: string;
@@ -44,7 +44,7 @@ const loginForm: Ref<LoginForm> = ref({
   password: '',
 });
 
-const loginFormRef: Ref<ElForm | null> = ref(null);
+const loginFormRef = ref(null);
 
 const rules = {
   username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],

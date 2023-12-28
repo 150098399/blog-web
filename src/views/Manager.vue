@@ -67,10 +67,10 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import hyRequest from '../request' as any;
+import hyRequest from '../request';
 
 interface Blog {
-  id: number;
+  id: string;
   title: string;
   content?: string;
   createtime?: string;
@@ -105,7 +105,7 @@ const getBlogList = (keyword) => {
   });
 };
 
-const reloadTabe = (keyword) => {
+const reloadTabe = (keyword?: any) => {
   getBlogList(keyword).then((res) => {
     blogList.value = res.data;
   });
