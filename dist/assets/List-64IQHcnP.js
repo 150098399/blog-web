@@ -1,0 +1,1 @@
+import{d as n,r as a,o,c as r,t as l,h as c,a as u}from"./index-dSEz082e.js";const m=n({__name:"List",setup(i){const e=a(""),s=()=>c.get({url:"/blog/list"});return o(()=>{s().then(t=>{e.value=t})}),(t,p)=>(u(),r("div",null,l(e.value),1))}});export{m as default};
